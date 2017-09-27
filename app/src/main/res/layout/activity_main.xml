@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwei.yuekao_2.MainActivity">
+<ListView
+    android:id="@+id/lv"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:choiceMode="singleChoice"
+    android:layout_gravity="left"
+
+    ></ListView>
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/HS"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/toutiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="头条"
+
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shehui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="社会"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/guonei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="国内"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/guoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="国际"
+            android:textSize="18sp" />
+
+        <TextView
+        android:id="@+id/yule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="title_click"
+        android:text="娱乐"
+        android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tiyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="体育"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/junshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="军事"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/kaixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="开心"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bukaixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="不开心"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ziji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="title_click"
+            android:text="自己"
+            android:textSize="18sp" />
+    </LinearLayout>
+</HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/VP"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v4.view.ViewPager>
+</android.support.v4.widget.DrawerLayout>
